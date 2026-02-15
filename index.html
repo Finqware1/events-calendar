@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Calendar 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="logo">
+          <span class="logo-icon material-icons-outlined">event</span>
+          Events Calendar <span class="year">2026</span>
+        </h1>
+      </div>
+      <div class="header-center">
+        <div class="view-switcher">
+          <button class="view-btn active" data-view="monthly">
+            <span class="material-icons-outlined">calendar_view_month</span>
+            Monthly
+          </button>
+          <button class="view-btn" data-view="yearly">
+            <span class="material-icons-outlined">calendar_today</span>
+            Yearly
+          </button>
+          <button class="view-btn" data-view="list">
+            <span class="material-icons-outlined">view_list</span>
+            List
+          </button>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="legend">
+          <span class="legend-item rofintech"><span class="legend-dot"></span>RoFintech</span>
+          <span class="legend-item finqware"><span class="legend-dot"></span>Finqware</span>
+          <span class="legend-item personal"><span class="legend-dot"></span>Personal</span>
+        </div>
+        <div class="stats-pill" id="statsPill">
+          <span class="material-icons-outlined">insights</span>
+          <span id="totalEvents">0</span> events
+        </div>
+        <button class="refresh-btn" id="refreshBtn" title="Refresh data">
+          <span class="material-icons-outlined">refresh</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Monthly Navigation -->
+    <div class="month-nav" id="monthNav">
+      <button class="month-nav-btn" id="prevMonth">
+        <span class="material-icons-outlined">chevron_left</span>
+      </button>
+      <h2 class="current-month" id="currentMonthLabel"></h2>
+      <button class="month-nav-btn" id="nextMonth">
+        <span class="material-icons-outlined">chevron_right</span>
+      </button>
+      <div class="month-chips" id="monthChips"></div>
+    </div>
+
+    <!-- Loading state -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Loading events from Google Sheets...</p>
+    </div>
+
+    <!-- Error state -->
+    <div class="error-state" id="errorState" style="display:none">
+      <span class="material-icons-outlined">error_outline</span>
+      <p id="errorMessage"></p>
+      <button class="retry-btn" onclick="fetchEvents()">Retry</button>
+    </div>
+
+    <!-- Monthly View -->
+    <div class="view-container" id="monthlyView">
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+
+    <!-- Yearly View -->
+    <div class="view-container" id="yearlyView" style="display:none">
+      <div class="yearly-grid" id="yearlyGrid"></div>
+    </div>
+
+    <!-- List View -->
+    <div class="view-container" id="listView" style="display:none">
+      <div class="list-controls">
+        <div class="search-box">
+          <span class="material-icons-outlined">search</span>
+          <input type="text" id="searchInput" placeholder="Search events...">
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="Rofintech">RoFintech</button>
+          <button class="filter-chip" data-filter="Finqware">Finqware</button>
+          <button class="filter-chip" data-filter="Personal">Personal</button>
+        </div>
+        <div class="filter-chips" id="countryFilter"></div>
+      </div>
+      <div class="events-list" id="eventsList"></div>
+    </div>
+
+    <!-- Event Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="eventModal">
+        <button class="modal-close" id="modalClose">
+          <span class="material-icons-outlined">close</span>
+        </button>
+        <div class="modal-header" id="modalHeader">
+          <div class="modal-type-badge" id="modalBadge"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <div class="modal-info-grid">
+            <div class="modal-info-item">
+              <span class="material-icons-outlined">calendar_today</span>
+              <div>
+                <label>Date</label>
+                <span id="modalDate"></span>
+              </div>
+            </div>
+            <div class="modal-info-item">
+              <span class="material-icons-outlined">location_on</span>
+              <div>
+                <label>Location</label>
+                <span id="modalLocation"></span>
+              </div>
+            </div>
+            <div class="modal-info-item">
+              <span class="material-icons-outlined">category</span>
+              <div>
+                <label>Type</label>
+                <span id="modalType"></span>
+              </div>
+            </div>
+            <div class="modal-info-item" id="modalNotesContainer" style="display:none">
+              <span class="material-icons-outlined">notes</span>
+              <div>
+                <label>Notes</label>
+                <span id="modalNotes"></span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-links" id="modalLinks" style="display:none">
+            <h3>Links</h3>
+            <div id="modalLinksContent"></div>
+          </div>
+          <div class="modal-details" id="modalDetails">
+            <h3>Event Details</h3>
+            <div id="modalDetailsContent" contenteditable="false">
+              <p class="placeholder-text">No additional details yet. Details and links can be added to the Google Sheet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Last updated -->
+    <footer class="footer">
+      <span>Last updated: <span id="lastUpdated">Never</span></span>
+      <span class="auto-refresh-label">
+        <span class="material-icons-outlined pulse-dot">fiber_manual_record</span>
+        Auto-refreshes every 5 minutes
+      </span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

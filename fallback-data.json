@@ -1,0 +1,332 @@
+[
+  {
+    "id": "1",
+    "name": "\ud83c\uddf7\ud83c\uddf4 RoFintech Breakfast | Hosted by Finqware",
+    "startDate": "01/14/2026",
+    "endDate": "01/14/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "2",
+    "name": "\ud83c\udf77 Joi la noi! \u2013 Finqware Afterhours Meeting \ud83e\uddc0",
+    "startDate": "01/15/2026",
+    "endDate": "01/15/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware own event"
+  },
+  {
+    "id": "3",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Meeting RoFintech - Cooperarea RO-MD \u00een fintech",
+    "startDate": "01/23/2026",
+    "endDate": "01/23/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "4",
+    "name": "\ud83c\uddf7\ud83c\uddf4 EY Entrepreneur Of The Year - Meet the Judges",
+    "startDate": "02/05/2026",
+    "endDate": "02/05/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "5",
+    "name": "\ud83c\uddf7\ud83c\uddf4 RoFintech Breakfast | Hosted by Rinf.Tech",
+    "startDate": "02/11/2026",
+    "endDate": "02/11/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "6",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Gala E-Finance FinMedia",
+    "startDate": "02/12/2026",
+    "endDate": "02/12/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware - sponsor"
+  },
+  {
+    "id": "7",
+    "name": "\ud83c\uddf7\ud83c\uddf4 VISA Event - Payments in Motion",
+    "startDate": "02/25/2026",
+    "endDate": "02/25/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "8",
+    "name": "\ud83c\udf77 Joi la noi! \u2013 Finqware Afterhours Meeting \ud83e\uddc0",
+    "startDate": "02/26/2026",
+    "endDate": "02/26/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware own event"
+  },
+  {
+    "id": "9",
+    "name": "\ud83c\uddf7\ud83c\uddf4 PwC CEO Survey Report",
+    "startDate": "03/04/2026",
+    "endDate": "03/04/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "10",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Ambasadori Digitali UniCredit Bank",
+    "startDate": "03/04/2026",
+    "endDate": "03/04/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "11",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Gala EY Entrepreneur Of The Year 2025",
+    "startDate": "03/05/2026",
+    "endDate": "03/05/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "12",
+    "name": "\ud83c\uddf7\ud83c\uddf4 AI & Big Data AmCham Conference",
+    "startDate": "03/06/2026",
+    "endDate": "03/06/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "13",
+    "name": "\ud83c\udded\ud83c\uddf7 Money Motion Zagreb",
+    "startDate": "03/11/2026",
+    "endDate": "03/12/2026",
+    "city": "Zagreb",
+    "country": "Croatia",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "14",
+    "name": "\ud83c\uddf7\ud83c\uddf4 RoFintech Breakfast | Hosted by Eazy Insure",
+    "startDate": "03/16/2026",
+    "endDate": "03/16/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "15",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Gala Rofintech 2026",
+    "startDate": "03/18/2026",
+    "endDate": "03/18/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": "Finqware - sponsor"
+  },
+  {
+    "id": "16",
+    "name": "\ud83c\udf77 Joi la noi! \u2013 Finqware Afterhours Meeting \ud83e\uddc0",
+    "startDate": "03/19/2026",
+    "endDate": "03/19/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware own event"
+  },
+  {
+    "id": "17",
+    "name": "\ud83c\uddf7\ud83c\uddf4 CFO Conference Bucharest Business Mark",
+    "startDate": "03/20/2026",
+    "endDate": "03/20/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware - sponsor"
+  },
+  {
+    "id": "18",
+    "name": "\ud83c\udded\ud83c\uddfa HFA Open banking event",
+    "startDate": "03/24/2026",
+    "endDate": "03/24/2026",
+    "city": "Budapest",
+    "country": "Hungary",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "19",
+    "name": "\ud83c\uddf7\ud83c\uddf4 EnterTech Conference - EMGC Event",
+    "startDate": "03/26/2026",
+    "endDate": "03/26/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "20",
+    "name": "\ud83c\uddf7\ud83c\uddf4 CFO Conference Ia\u0219i Business Mark",
+    "startDate": "04/01/2026",
+    "endDate": "04/01/2026",
+    "city": "Iasi",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "21",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Future Banking Bucuresti",
+    "startDate": "04/02/2026",
+    "endDate": "04/02/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "22",
+    "name": "\ud83c\uddf7\ud83c\uddf4 RoFintech Breakfast | Hosted by Agricover",
+    "startDate": "04/08/2026",
+    "endDate": "04/08/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "23",
+    "name": "\ud83c\udde7\ud83c\uddea EACT Summit",
+    "startDate": "04/16/2026",
+    "endDate": "04/17/2026",
+    "city": "Bruxelles",
+    "country": "Belgium",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "24",
+    "name": "\ud83c\udf77 Joi la noi! \u2013 Finqware Afterhours Meeting \ud83e\uddc0",
+    "startDate": "04/23/2026",
+    "endDate": "04/23/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "25",
+    "name": "\ud83c\uddf7\ud83c\uddf4 Curs IBR (Institutul Bancar Roman)",
+    "startDate": "05/07/2026",
+    "endDate": "05/07/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "26",
+    "name": "\ud83c\uddf7\ud83c\uddf4 RoFintech Breakfast | Hosted by FORT",
+    "startDate": "05/13/2026",
+    "endDate": "05/13/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "27",
+    "name": "\ud83c\udf77 Joi la noi! \u2013 Finqware Afterhours Meeting \ud83e\uddc0",
+    "startDate": "05/14/2026",
+    "endDate": "05/14/2026",
+    "city": "Bucharest",
+    "country": "Romania",
+    "type": "Finqware",
+    "notes": "Finqware own event"
+  },
+  {
+    "id": "28",
+    "name": "\ud83c\uddf3\ud83c\uddf4 Norway Discovery Week - Oslo 21-25 May 2026",
+    "startDate": "05/21/2026",
+    "endDate": "05/25/2026",
+    "city": "Oslo",
+    "country": "Norway",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "29",
+    "name": "\ud83c\uddf3\ud83c\uddf1 Money 2020 Amsterdam",
+    "startDate": "06/02/2026",
+    "endDate": "06/04/2026",
+    "city": "Amsterdam",
+    "country": "Nederlands",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "30",
+    "name": "\ud83c\uddf1\ud83c\uddfa Nexus Luxemburg (10-11 June)",
+    "startDate": "06/10/2026",
+    "endDate": "06/11/2026",
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "type": "Rofintech",
+    "notes": ""
+  },
+  {
+    "id": "31",
+    "name": "\ud83c\udded\ud83c\uddfa CEE Treasury Forum - Si\u00f3fok (Balaton Lake)",
+    "startDate": "06/12/2026",
+    "endDate": "06/12/2026",
+    "city": "Siofok",
+    "country": "Hungary",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "32",
+    "name": "\ud83c\udde9\ud83c\uddf0 EBA Day Conpenhaga - Denmark (tentative)",
+    "startDate": "06/16/2026",
+    "endDate": "06/17/2026",
+    "city": "Copenhaga",
+    "country": "Denmark",
+    "type": "Finqware",
+    "notes": ""
+  },
+  {
+    "id": "35",
+    "name": "\ud83c\uddea\ud83c\uddf8 Eurofinance Barcelona - 16-18 sept 2026",
+    "startDate": "09/16/2026",
+    "endDate": "09/18/2026",
+    "city": "Barcelona",
+    "country": "Spain",
+    "type": "Finqware",
+    "notes": ""
+  }
+]
